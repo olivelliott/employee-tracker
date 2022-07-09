@@ -15,9 +15,10 @@ const {
 } = require('./lib/Roles');
 
 
-const { viewEmployees } = require('./lib/Employee');
-
-
+const { 
+    viewEmployees, 
+    employeeParams 
+} = require('./lib/Employee');
 
 
 db.connect((err) => {
@@ -42,12 +43,12 @@ const promptArr = [
 startPrompt = function () {
     inquirer.prompt({
         type: 'list',
-        name: 'chosenAction',
+        name: 'action',
         message: 'What would you like to do?',
         choices: promptArr
     })
-    .then (({ chosenAction }) => {
-        switch (chosenAction) {
+    .then (({ action }) => {
+        switch (action) {
             case 'View all departments':
                 showDepartments();
                 break;
@@ -68,7 +69,8 @@ startPrompt = function () {
                 roleParams();
                 break;
 
-            case 'Add a employee':
+            case 'Add an employee':
+                employeeParams();
                 break;
 
             case 'Update an employee role':
