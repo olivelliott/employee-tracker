@@ -17,7 +17,8 @@ const {
 
 const { 
     viewEmployees, 
-    employeePrompt 
+    employeePrompt, 
+    chooseEmployee
 } = require('./lib/Employee');
 
 
@@ -74,6 +75,7 @@ startPrompt = function () {
                 break;
 
             case 'Update an employee role':
+                chooseEmployee();
                 break;
 
             case 'Im done!':
