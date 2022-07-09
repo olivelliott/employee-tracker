@@ -17,7 +17,7 @@ const {
 
 const { 
     viewEmployees, 
-    employeeParams 
+    employeePrompt 
 } = require('./lib/Employee');
 
 
@@ -70,7 +70,7 @@ startPrompt = function () {
                 break;
 
             case 'Add an employee':
-                employeeParams();
+                employeePrompt();
                 break;
 
             case 'Update an employee role':
