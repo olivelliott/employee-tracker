@@ -1,5 +1,4 @@
 // const express = require("express");
-const nodemon = require("nodemon");
 const db = require("./db/connection");
 const inquirer = require("inquirer");
 const cTable = require("console.table");
@@ -15,9 +14,9 @@ const {
 } = require('./lib/Roles');
 
 
-const { 
-    viewEmployees, 
-    employeePrompt, 
+const {
+    viewEmployees,
+    employeePrompt,
     chooseEmployee
 } = require('./lib/Employee');
 
