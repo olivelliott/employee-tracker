@@ -12,16 +12,16 @@ VALUES
     ('Account Manager', 45000, 2),
     ('Accountant', 80000, 3),
     ('Salesperson', 54000, 4),
-    ('Legal Team Manager', 80000, 6),
-    ('Lawyer', 60000, 7);
+    ('Legal Team Manager', 80000, 3),
+    ('Lawyer', 60000, 1);
 
 
 INSERT INTO employees (first_name, last_name, role_id, manager_id)
 VALUES
-    ('Michael', 'Scott', 0034, 2),
-    ('Ashley', 'Rodriguez', 46678, NULL),
-    ('Kevin', 'Brown', 58880, 5),
-    ('Sarah', 'Lourd', 43224, 5),
-    ('Moby', 'Krista', 12964, NULL),
-    ('Abby', 'Williams', 234432, 7),
-    ('Tom', 'Allen', 999909, NULL);
+    ('Michael', 'Scott', 2, 2),
+    ('Ashley', 'Rodriguez', 5, null),
+    ('Kevin', 'Brown', 4, 2),
+    ('Sarah', 'Lourd', 4, 5),
+    ('Moby', 'Krista', 3, null),
+    ('Abby', 'Williams', 2, 5),
+    ('Tom', 'Allen', 1, 5);
