@@ -44,11 +44,11 @@ Once you have cloned the repository to your local system and initialized the npm
 - Initialize Node.js by entering `npm start` into your command-line
 - Answer the following command-line prompts for your specified tasks!
 
-### Screenshots
+### Media
 
-![Index](./assets/images/index-screenshot.png)
+[Walthrough Video](https://drive.google.com/file/d/1Hgd13TaKXh2BWk7x4XDrlITAYyLCW0KE/view)
 
-![Note Page](./assets/images/notes-screenshot.png)
+![Note Page](./img/employee-tracker.png)
 
 ## License
 This application is licensed under the MIT license. Please click on the link below to learn more.
