@@ -16,15 +16,20 @@ const {
 
 const {
     viewEmployees,
-    employeePrompt,
+    newEmployeePrompt,
     chooseEmployee
 } = require('./lib/Employee');
 
 
 db.connect((err) => {
-  if (err) throw err;
-  console.log("Connected to the employee database ⭐");
-  startPrompt();
+    if (err) throw err;
+    console.log("Connected to the employee database ⭐");
+    console.log("***********************************");
+    console.log("*                                 *");
+    console.log("*        EMPLOYEE TRACKER         *");
+    console.log("*                                 *");
+    console.log("***********************************");
+    startPrompt();
 });
 
 
@@ -41,6 +46,7 @@ const promptArr = [
 
 
 startPrompt = function () {
+
     inquirer.prompt({
         type: 'list',
         name: 'action',
@@ -70,7 +76,7 @@ startPrompt = function () {
                 break;
 
             case 'Add an employee':
-                employeePrompt();
+                newEmployeePrompt();
                 break;
 
             case 'Update an employee role':
